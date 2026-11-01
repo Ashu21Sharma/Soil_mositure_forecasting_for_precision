@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Soil Moisture Forecasting Dashboard Deployment
 
 ## Streamlit Community Cloud
@@ -38,3 +39,6 @@ Run locally from the project root with:
 ```powershell
 .\.venv\Scripts\python.exe -m streamlit run dashboard\app.py
 ```
+=======
+# Soil_mositure_forecasting_for_precision
+>>>>>>> 93b1ecf4d3e173875017d22121321c739874e5d2
