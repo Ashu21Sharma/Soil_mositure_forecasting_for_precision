@@ -1,0 +1,38 @@
+Soil moisture forecasting evaluation
+Metrics use the chronological held-out test period only.
+MAE and RMSE are in volumetric-moisture percentage points; lower is better.
+R-squared is also shown and can be negative for weak forecasts.
+Persistence predicts the current measured moisture at the forecast origin.
+
+1h forecast (4 records ahead):
+  Best ML model: Linear_Regression (MAE=0.0867, RMSE=0.2820, R2=0.9874)
+  Persistence baseline: MAE=0.0884, RMSE=0.2796, R2=0.9876
+  Best overall by MAE then RMSE: Linear_Regression.
+  The selected ML model beats persistence on both MAE and RMSE: False.
+
+3h forecast (12 records ahead):
+  Best ML model: Linear_Regression (MAE=0.2474, RMSE=0.5215, R2=0.9568)
+  Persistence baseline: MAE=0.2383, RMSE=0.5031, R2=0.9598
+  Best overall by MAE then RMSE: Persistence_Baseline.
+  The selected ML model beats persistence on both MAE and RMSE: False.
+
+6h forecast (24 records ahead):
+  Best ML model: Linear_Regression (MAE=0.4910, RMSE=0.8168, R2=0.8938)
+  Persistence baseline: MAE=0.4332, RMSE=0.7456, R2=0.9115
+  Best overall by MAE then RMSE: Persistence_Baseline.
+  The selected ML model beats persistence on both MAE and RMSE: False.
+
+Full comparison table:
+Forecast_Horizon                Model    MAE   RMSE     R2  Test_Samples
+              1h Persistence_Baseline 0.0884 0.2796 0.9876          4246
+              1h    Linear_Regression 0.0867 0.2820 0.9874          4246
+              1h        Decision_Tree 0.2639 0.5808 0.9466          4246
+              1h        Random_Forest 0.2619 0.5629 0.9498          4246
+              3h Persistence_Baseline 0.2383 0.5031 0.9598          4230
+              3h    Linear_Regression 0.2474 0.5215 0.9568          4230
+              3h        Decision_Tree 0.4414 0.7822 0.9029          4230
+              3h        Random_Forest 0.4442 0.7725 0.9053          4230
+              6h Persistence_Baseline 0.4332 0.7456 0.9115          4206
+              6h    Linear_Regression 0.4910 0.8168 0.8938          4206
+              6h        Decision_Tree 0.6962 1.0837 0.8131          4206
+              6h        Random_Forest 0.6619 1.0087 0.8380          4206

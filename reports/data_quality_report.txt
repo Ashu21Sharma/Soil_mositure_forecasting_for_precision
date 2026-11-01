@@ -1,0 +1,136 @@
+Source dataset: C:\Users\dtrip\OneDrive\Desktop\soil_moisture_forecasting_for_precision_model\data\hardware\historical_agricultural_dataset
+Source is read-only; the original file is not modified.
+Wokwi hardware-generated readings are not used.
+
+Dataset shape: (21312, 22)
+Columns: ['Timestamp', 'Farm_ID', 'Volumetric_Moisture_Pct', 'Sensor_Board_Temperature_C', 'Raw_Capacitive_ADC', 'Sensor_Voltage_V', 'Atm_Pressure_inHg', 'Atm_Temperature_C', 'Soil_Temperature_C', 'SM_Level_15cm', 'SM_Volume_15cm', 'SM_Aggregate_Pct', 'SM_Volume_Pct', 'Hour', 'Day', 'Month', 'DayOfWeek', 'DayOfYear', 'Hour_sin', 'Hour_cos', 'Day_sin', 'Day_cos']
+Data types:
+Timestamp                         str
+Farm_ID                           str
+Volumetric_Moisture_Pct       float64
+Sensor_Board_Temperature_C    float64
+Raw_Capacitive_ADC              int64
+Sensor_Voltage_V              float64
+Atm_Pressure_inHg             float64
+Atm_Temperature_C             float64
+Soil_Temperature_C            float64
+SM_Level_15cm                 float64
+SM_Volume_15cm                float64
+SM_Aggregate_Pct              float64
+SM_Volume_Pct                 float64
+Hour                            int64
+Day                             int64
+Month                           int64
+DayOfWeek                       int64
+DayOfYear                       int64
+Hour_sin                      float64
+Hour_cos                      float64
+Day_sin                       float64
+Day_cos                       float64
+Missing values by column:
+Timestamp                     0
+Farm_ID                       0
+Volumetric_Moisture_Pct       0
+Sensor_Board_Temperature_C    0
+Raw_Capacitive_ADC            0
+Sensor_Voltage_V              0
+Atm_Pressure_inHg             0
+Atm_Temperature_C             0
+Soil_Temperature_C            0
+SM_Level_15cm                 0
+SM_Volume_15cm                0
+SM_Aggregate_Pct              0
+SM_Volume_Pct                 0
+Hour                          0
+Day                           0
+Month                         0
+DayOfWeek                     0
+DayOfYear                     0
+Hour_sin                      0
+Hour_cos                      0
+Day_sin                       0
+Day_cos                       0
+Exact duplicate rows: 0
+Basic numeric statistics:
+       Volumetric_Moisture_Pct  Sensor_Board_Temperature_C  Raw_Capacitive_ADC  Sensor_Voltage_V  Atm_Pressure_inHg  Atm_Temperature_C  Soil_Temperature_C  SM_Level_15cm  SM_Volume_15cm  SM_Aggregate_Pct  SM_Volume_Pct          Hour           Day         Month     DayOfWeek     DayOfYear      Hour_sin      Hour_cos       Day_sin       Day_cos
+count             21312.000000                21312.000000        21312.000000      21312.000000       21312.000000       21312.000000        21312.000000   21312.000000    21312.000000      21312.000000   21312.000000  21312.000000  21312.000000  21312.000000  21312.000000  21312.000000  2.131200e+04  2.131200e+04  21312.000000  21312.000000
+mean                 11.906643                   25.407124          744.543919          2.401756          29.903831          25.339160           25.341075       1.037733        4.485977         12.482814       9.627742     11.500000     15.432432      2.486486      2.981982     60.000000 -5.001005e-18 -5.851175e-17      0.733965      0.437912
+std                   2.025600                    5.959021           59.610933          0.192294           0.105592           5.480253            4.418496       0.791346        3.111498          8.843573       6.659665      6.922349      8.277616      1.089408      1.999966     32.042391  7.071234e-01  7.071234e-01      0.280130      0.437113
+min                   8.910000                    9.230235          461.000000          1.487000          29.655200          11.200000           14.450000       0.000000        0.690000          0.000000       2.650000      0.000000      1.000000      1.000000      0.000000      5.000000 -1.000000e+00 -1.000000e+00      0.085965     -0.397543
+25%                  10.530000                   21.063804          733.000000          2.365000          29.813100          21.217500           21.820000       0.450000        2.060000          5.930000       4.370000      5.750000      8.000000      2.000000      1.000000     32.000000 -7.071068e-01 -7.071068e-01      0.523416      0.055917
+50%                  11.400000                   25.285471          763.000000          2.461000          29.920800          25.440000           25.520000       0.890000        3.660000         10.230000       7.870000     11.500000     15.000000      3.000000      3.000000     60.000000  6.123234e-17 -6.123234e-17      0.858764      0.512371
+75%                  12.630000                   29.582705          781.000000          2.519000          29.989900          29.270000           28.960000       1.460000        5.840000         16.600000      12.540000     17.250000     22.000000      3.000000      5.000000     88.000000  7.071068e-01  7.071068e-01      0.972118      0.852078
+max                  19.630000                   43.494341          833.000000          2.687000          30.131400          39.610000           35.470000       4.960000       19.660000         55.960000      41.460000     23.000000     31.000000      4.000000      6.000000    115.000000  1.000000e+00  1.000000e+00      0.999991      0.996298
+
+Cleaning results:
+Exact duplicate rows removed: 0
+Rows with invalid timestamps: 0
+Rows with missing farm IDs: 0
+Rows with missing/invalid forecast target: 0
+Rows removed for invalid core fields: 0
+Rows saved: 21312 (started with 21312)
+Farm IDs normalized for model inputs:
+Kolkata_Farm_1 -> Farm_1
+Kolkata_Farm_2 -> Farm_2
+Timestamp was parsed as datetime and rows sorted by Farm_ID, then Timestamp.
+Cleaned data types:
+Timestamp                     datetime64[us]
+Farm_ID                                  str
+Volumetric_Moisture_Pct              float64
+Sensor_Board_Temperature_C           float64
+Raw_Capacitive_ADC                   float64
+Sensor_Voltage_V                     float64
+Atm_Pressure_inHg                    float64
+Atm_Temperature_C                    float64
+Soil_Temperature_C                   float64
+SM_Level_15cm                        float64
+SM_Volume_15cm                       float64
+SM_Aggregate_Pct                     float64
+SM_Volume_Pct                        float64
+Hour                                   int64
+Day                                    int64
+Month                                  int64
+DayOfWeek                              int64
+DayOfYear                              int64
+Hour_sin                             float64
+Hour_cos                             float64
+Day_sin                              float64
+Day_cos                              float64
+Impossible/out-of-range sensor values set to missing:
+None found.
+Remaining missing values (numeric model features are imputed using training data only):
+Timestamp                     0
+Farm_ID                       0
+Volumetric_Moisture_Pct       0
+Sensor_Board_Temperature_C    0
+Raw_Capacitive_ADC            0
+Sensor_Voltage_V              0
+Atm_Pressure_inHg             0
+Atm_Temperature_C             0
+Soil_Temperature_C            0
+SM_Level_15cm                 0
+SM_Volume_15cm                0
+SM_Aggregate_Pct              0
+SM_Volume_Pct                 0
+Hour                          0
+Day                           0
+Month                         0
+DayOfWeek                     0
+DayOfYear                     0
+Hour_sin                      0
+Hour_cos                      0
+Day_sin                       0
+Day_cos                       0
+15-minute interval check, separately per farm:
+Farm_1: 10656 rows; 0 interval(s) not 15 minutes; 0 gap(s) longer than 15 minutes
+Farm_2: 10656 rows; 0 interval(s) not 15 minutes; 0 gap(s) longer than 15 minutes
+IQR outliers detected, retained in the dataset:
+Volumetric_Moisture_Pct: 1565 value(s) outside [7.3800, 15.7800]
+Sensor_Board_Temperature_C: 3 value(s) outside [8.2855, 42.3611]
+Raw_Capacitive_ADC: 2020 value(s) outside [661.0000, 853.0000]
+Sensor_Voltage_V: 2034 value(s) outside [2.1340, 2.7500]
+SM_Level_15cm: 579 value(s) outside [-1.0650, 2.9750]
+SM_Volume_15cm: 818 value(s) outside [-3.6100, 11.5100]
+SM_Aggregate_Pct: 786 value(s) outside [-10.0750, 32.6050]
+SM_Volume_Pct: 792 value(s) outside [-7.8850, 24.7950]
+Outliers are reported only; valid extreme readings are not deleted.

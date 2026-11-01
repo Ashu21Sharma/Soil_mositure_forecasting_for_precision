@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Precision Agriculture sprout logo</title>
+  <rect width="128" height="128" rx="28" fill="#f3f8f4"/>
+  <path d="M22 86c13-8 26-11 42-11s29 3 42 11v17H22z" fill="#8b5a35"/>
+  <path d="M22 87c14-7 28-10 42-10s28 3 42 10" fill="none" stroke="#674128" stroke-width="4" stroke-linecap="round"/>
+  <path d="M64 79V39" fill="none" stroke="#237a57" stroke-width="7" stroke-linecap="round"/>
+  <path d="M61 54C44 54 32 44 31 26c19-1 32 8 34 25" fill="#3d9b66"/>
+  <path d="M67 45c2-17 15-27 33-26-1 18-13 29-34 30" fill="#237a57"/>
+  <path d="M38 31c9 4 16 10 23 19M94 26c-9 5-16 11-25 20" fill="none" stroke="#d7efe0" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 91v8m16-9v9m16-9v9" stroke="#c99963" stroke-width="3" stroke-linecap="round"/>
+</svg>

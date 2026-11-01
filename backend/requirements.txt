@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+pyserial>=3.5,<4
+plotly
+streamlit
